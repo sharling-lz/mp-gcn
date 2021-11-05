@@ -1,10 +1,10 @@
 # Graph-Based Motion Prediction for Abnormal Action Detection
 
-This is an official pytorch implementation of [Graph-Based Motion Prediction for Abnormal Action Detection](https://dl.acm.org/doi/abs/10.1145/3444685.3446316).  In this work,  we proposes human motion prediction for abnormal action detection. We employ sequence of human poses to represent human motion ,  and detect irregular behavior by comparing the predicted pose with the actual pose detected in the frame.
+This is an official pytorch implementation of [Graph-Based Motion Prediction for Abnormal Action Detection](https://dl.acm.org/doi/abs/10.1145/3444685.3446316). In this work,  we propose human motion prediction for abnormal action detection. We employ sequence of human poses to represent human motion, and detect irregular behavior by comparing the predicted pose with the actual pose detected in the frame.
 
 ## Introduction
 
-MP-GCN (motion prediction GCN)  employ sequence of human poses  to predict pose in the next frame. </br>
+This project provides the codes of MP-GCN (motion prediction GCN), which predicts future human poses in the next frame. </br> The framework of MG-GCN is illustrated below:
 
 <img src="MP-GCN.png" style="zoom: 80%;float:left" />
 
@@ -21,12 +21,9 @@ MP-GCN (motion prediction GCN)  employ sequence of human poses  to predict pose 
 | Our method (MP-GCN)  | 0.732 |
 
 
-
 ## Environment
 
-The code is developed using python 3.6 on Ubuntu 18.04.  NVIDIA GPUs are needed.  The code is developed and tested using 1 NVIDIA 2080Ti GPU.
-
-
+The code is developed using python 3.6 on Ubuntu 18.04. NVIDIA GPUs are needed. The code is developed and tested using 1 NVIDIA 2080Ti GPU.
 
 ## Quick start
 
@@ -47,11 +44,9 @@ pip install -r requirements.txt
 cd torchlight; python setup.py install; 
 ```
 
-
-
 ### Data Preparation
 
-1. NJUST-Anomaly data contains 137 videos, including 107 training videos and 30 test videos. You can download [here]() . The data should like this.
+1. Our NJUST-Anomaly dataset contains 137 videos, including 107 training video clips and 30 testing video clips. All of the video clips can be downloaded [here](https://pan.baidu.com/s/1TT8Qn0Q8nkhxOeY5_QaiRg). Extraction code: wpbj. The directory tree should look like this:
 
    ```
    ${NJUST-Anomaly data}
