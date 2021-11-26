@@ -171,12 +171,12 @@ The test result will be saved in test_result.pkl, which can be found in ${MPGCN_
    python oks.py
    ```
 
-### Ciation
+### Citation
 
 If you use our code or models in your research, please cite with:
 
 ```
-@inproceedings{10.1145/3444685.3446316,
+@inproceedings{tang-graph-2021,
 author = {Tang, Yao and Zhao, Lin and Yao, Zhaoliang and Gong, Chen and Yang, Jian},
 title = {Graph-Based Motion Prediction for Abnormal Action Detection},
 year = {2021},
